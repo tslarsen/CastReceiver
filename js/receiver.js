@@ -127,6 +127,10 @@ console.log("Supported format: audio/mp4; codecs=ec-3; spatialRendering=true: " 
 console.log("------------------");
 
 
+const deviceCapabilities = context.getDeviceCapabilities();
+console.log("deviceCapabilities: " + deviceCapabilities);
+
+
 /*
  * Example analytics tracking implementation. To enable this functionality see
  * the implmentation and complete the TODO item in ./google_analytics.js. Once

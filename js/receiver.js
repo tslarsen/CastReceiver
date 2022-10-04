@@ -128,13 +128,39 @@ console.log("------------------");
 const MydeviceCapabilities = context.getDeviceCapabilities();
 console.log("deviceCapabilities: " + MydeviceCapabilities);
 
-console.log("deviceCapabilities.CAPABILITY_MULTIZONE_GROUP: " + MydeviceCapabilities.CAPABILITY_MULTIZONE_GROUP);
 
-console.log("deviceCapabilities.BLUETOOTH_SUPPORTED: " + MydeviceCapabilities.BLUETOOTH_SUPPORTED);
-console.log("deviceCapabilities.HI_RES_AUDIO_SUPPORTED: " + MydeviceCapabilities.HI_RES_AUDIO_SUPPORTED);
-console.log("deviceCapabilities.IS_GROUP: " + MydeviceCapabilities.IS_GROUP);
-console.log("deviceCapabilities.IS_DEVICE_REGISTERED: " + MydeviceCapabilities.IS_DEVICE_REGISTERED);
-console.log("deviceCapabilities.IS_DOLBY_ATMOS_SUPPORTED: " + MydeviceCapabilities.IS_DOLBY_ATMOS_SUPPORTED);
+
+
+
+
+  if (deviceCapabilities &&
+      deviceCapabilities[cast.framework.system.DeviceCapabilities.BLUETOOTH_SUPPORTED]) {
+      console.log("deviceCapabilities.BLUETOOTH_SUPPORTED: " + MydeviceCapabilities.BLUETOOTH_SUPPORTED);
+
+    // Write your own event handling code, for example
+    // using the deviceCapabilities[cast.framework.system.DeviceCapabilities.IS_HDR_SUPPORTED] value
+  }
+  if (deviceCapabilities &&
+      deviceCapabilities[cast.framework.system.DeviceCapabilities.HI_RES_AUDIO_SUPPORTED]) {
+      console.log("deviceCapabilities.HI_RES_AUDIO_SUPPORTED: " + MydeviceCapabilities.HI_RES_AUDIO_SUPPORTED);
+  }
+
+  if (deviceCapabilities &&
+      deviceCapabilities[cast.framework.system.DeviceCapabilities.IS_DEVICE_REGISTERED]) {
+      console.log("deviceCapabilities.IS_DEVICE_REGISTERED: " + MydeviceCapabilities.IS_DEVICE_REGISTERED);
+  }
+  if (deviceCapabilities &&
+      deviceCapabilities[cast.framework.system.DeviceCapabilities.IS_GROUP]) {
+      console.log("deviceCapabilities.IS_GROUP: " + MydeviceCapabilities.IS_GROUP);
+  }
+  if (deviceCapabilities &&
+      deviceCapabilities[cast.framework.system.DeviceCapabilities.IS_DOLBY_ATMOS_SUPPORTED]) {
+      console.log("deviceCapabilities.IS_DOLBY_ATMOS_SUPPORTED: " + MydeviceCapabilities.IS_DOLBY_ATMOS_SUPPORTED);
+  }
+  if (deviceCapabilities &&
+      deviceCapabilities[cast.framework.system.DeviceCapabilities.CAPABILITY_MULTIZONE_GROUP]) {
+      console.log("deviceCapabilities.CAPABILITY_MULTIZONE_GROUP: " + MydeviceCapabilities.CAPABILITY_MULTIZONE_GROUP);
+  }
 
 /*
  * Example analytics tracking implementation. To enable this functionality see

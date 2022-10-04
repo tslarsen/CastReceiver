@@ -102,7 +102,7 @@ playerManager.addEventListener(
         'properly and the media is able to play.');
     }
 });
-
+const ismhm1_0x0D = context.canDisplayType('audio/mp4', ' mhm1.0x0D');
 const ismhm1_0x0E = context.canDisplayType('audio/mp4', ' mhm1.0x0E');
 const ismhm1_0x12 = context.canDisplayType('audio/mp4', ' mhm1.0x12');
 const ismha1_0x0D = context.canDisplayType('audio/mp4', ' mha1.0x0D');

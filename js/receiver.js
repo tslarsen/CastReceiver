@@ -126,10 +126,10 @@ console.log("------------------");
 
 
 const MydeviceCapabilities = context.getDeviceCapabilities();
-console.log("deviceCapabilities: " + MydeviceCapabilities;
+console.log("deviceCapabilities: " + MydeviceCapabilities);
 
 //const MydeviceCapabilities = context.getDeviceCapabilities();
-console.log("deviceCapabilities.CAPABILITY_MULTIZONE_GROUP: " + MydeviceCapabilities.CAPABILITY_MULTIZONE_GROUP;
+console.log("deviceCapabilities.CAPABILITY_MULTIZONE_GROUP: " + MydeviceCapabilities.CAPABILITY_MULTIZONE_GROUP);
 
 /*
  * Example analytics tracking implementation. To enable this functionality see

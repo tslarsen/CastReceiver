@@ -128,8 +128,13 @@ console.log("------------------");
 const MydeviceCapabilities = context.getDeviceCapabilities();
 console.log("deviceCapabilities: " + MydeviceCapabilities);
 
-//const MydeviceCapabilities = context.getDeviceCapabilities();
 console.log("deviceCapabilities.CAPABILITY_MULTIZONE_GROUP: " + MydeviceCapabilities.CAPABILITY_MULTIZONE_GROUP);
+
+console.log("deviceCapabilities.BLUETOOTH_SUPPORTED: " + MydeviceCapabilities.BLUETOOTH_SUPPORTED);
+console.log("deviceCapabilities.HI_RES_AUDIO_SUPPORTED: " + MydeviceCapabilities.HI_RES_AUDIO_SUPPORTED);
+console.log("deviceCapabilities.IS_GROUP: " + MydeviceCapabilities.IS_GROUP);
+console.log("deviceCapabilities.IS_DEVICE_REGISTERED: " + MydeviceCapabilities.IS_DEVICE_REGISTERED);
+console.log("deviceCapabilities.IS_DOLBY_ATMOS_SUPPORTED: " + MydeviceCapabilities.IS_DOLBY_ATMOS_SUPPORTED);
 
 /*
  * Example analytics tracking implementation. To enable this functionality see

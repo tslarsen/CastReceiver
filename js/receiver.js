@@ -126,7 +126,7 @@ console.log("------------------");
 
 
 const deviceCapabilities = context.getDeviceCapabilities();
-console.log("deviceCapabilities: " + MydeviceCapabilities);
+console.log("deviceCapabilities: " + deviceCapabilities);
 
 
 

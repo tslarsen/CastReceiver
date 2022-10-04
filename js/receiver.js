@@ -125,7 +125,7 @@ console.log("Supported format: audio/mp4; codecs=ec-3; spatialRendering=true: " 
 console.log("------------------");
 
 
-const MydeviceCapabilities = context.getDeviceCapabilities();
+const deviceCapabilities = context.getDeviceCapabilities();
 console.log("deviceCapabilities: " + MydeviceCapabilities);
 
 

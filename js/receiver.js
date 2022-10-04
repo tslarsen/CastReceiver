@@ -103,8 +103,6 @@ playerManager.addEventListener(
     }
 });
 
-
-const ismhm1_0x0D = context.canDisplayType('audio/mp4', ' mhm1.0x0D');
 const ismhm1_0x0E = context.canDisplayType('audio/mp4', ' mhm1.0x0E');
 const ismhm1_0x12 = context.canDisplayType('audio/mp4', ' mhm1.0x12');
 const ismha1_0x0D = context.canDisplayType('audio/mp4', ' mha1.0x0D');
@@ -127,9 +125,11 @@ console.log("Supported format: audio/mp4; codecs=ec-3; spatialRendering=true: " 
 console.log("------------------");
 
 
-const deviceCapabilities = context.getDeviceCapabilities();
-console.log("deviceCapabilities: " + deviceCapabilities);
+const MydeviceCapabilities = context.getDeviceCapabilities();
+console.log("deviceCapabilities: " + MydeviceCapabilities;
 
+//const MydeviceCapabilities = context.getDeviceCapabilities();
+console.log("deviceCapabilities.CAPABILITY_MULTIZONE_GROUP: " + MydeviceCapabilities.CAPABILITY_MULTIZONE_GROUP;
 
 /*
  * Example analytics tracking implementation. To enable this functionality see
